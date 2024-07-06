@@ -25,6 +25,13 @@ list_of_files = [
     f"{project_name}/pipeline/__init__.py",
     f"{project_name}/pipeline/training_pipeline.py",
     f"{project_name}/pipeline/prediction_pipeline.py"
+    "app.py",
+    'requirements.txt',
+    'Dockerfile',
+    'dockerignore',
+    'demo.py',
+    'config/model.yaml',
+    'config/schema.yaml'
     ]
 
 
