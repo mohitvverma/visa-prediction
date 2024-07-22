@@ -15,14 +15,17 @@ We need four things in our logging file
 
 LOG_FILE_NAME = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 
+main_file_path = os.path.abspath(os.path.join(os.getcwd(), '..'))
+sys.path.insert(0, main_file_path)
 
-logs_path = os.path.join('/Users/mohitverma/Documents/Machine Learning Pro/US Visa Prediction Task',
+logs_path = os.path.join(main_file_path,
                          'Logs_data',
                          LOG_FILE_NAME)
 
 
 if not os.path.exists(logs_path):
     os.makedirs(logs_path, exist_ok=True)
+
 
 
 LOG_FILE_PATH = os.path.join(logs_path, LOG_FILE_NAME)
